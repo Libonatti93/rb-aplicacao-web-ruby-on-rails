@@ -1,0 +1,24 @@
+Complete web application with Ruby on Rails - a blogging application with CRUD (Create, Read, Update, Delete) features for posts.
+It is important to follow some basic steps:
+Keep in mind that to run it, you'll need to have Ruby, Rails, and a database (like SQLite, which is the default) configured in your environment.
+
+
+Step by Step to Create the Application:
+Install Rails: If you don't already have Rails installed, you can install it with:
+gem install rails
+
+Create a new Rails project:
+rails new blog_app
+cd blog_app
+
+Generate the Model, Controller and Views for the Post: Let's create a Post resource with title and body attributes.
+rails generate scaffold Post title:string body:text
+
+Migrate the Database: After generating the scaffold, migrate the database to create the necessary tables.
+rails db:migrate
+
+Run the Server: Now, you can run the Rails server to see your application in action.
+rails server
+
+Go to http://localhost:3000/posts to see your blog application in action.
+
